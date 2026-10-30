@@ -19,3 +19,6 @@ The mechanical portion of the system consists of the rotating handle and needle,
 The DC motor is coupled to the valve handle through a set of gears that supply the torque to rotate the handle. To control the flow rate, both the DC motor and the valve, which together make up the plant should be modelled. The plant input is the voltage to the motor, and the output is flow rate. The fluid domain does not need to be included in the model, since the valve position can be measured and then used to calculate flow rate.
 
 <img width="870" height="207" alt="Block Diagram" src="https://github.com/user-attachments/assets/2b7a345b-2029-46b2-8b75-fc1e3691df65" />
+
+## Methodology
+
