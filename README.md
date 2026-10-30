@@ -35,6 +35,7 @@ The datasheet below describes the linear relationship between valve position and
 
 Simulink contains a 1-D Lookup Table block (Simulink > Lookup Tables). This block can be to specify an input-output relationship using a table of values. The block interpolates between the specified values.
 
+When the plant model is created with motor voltage as the input and flow rate as the output, a feedback control loop should be added. Hence, a flow rate of 5 liters per minute can be achieved.
 
 STEP 1: 
 A Controlled Voltage Source block and a PS Constant block are added to your model.
@@ -84,13 +85,26 @@ Hence, a Scope block can be added and connected to the output of the 1-D Lookup 
 
 <img width="1060" height="444" alt="Step 6" src="https://github.com/user-attachments/assets/7680f540-d43b-4060-a759-692c7518d344" /><img width="1680" height="884" alt="Scope" src="https://github.com/user-attachments/assets/30a841ae-224f-4669-8034-549625b9893d" />
 
+STEP 7:
+Now, the PS Constant block is deleted and these blocks are added:
+Simulink-PS Converter
+Constant
+Discrete PID Controller
+Sum
+Unit Delay
+Then, they are arranged to create a feedback control loop, with the Constant block providing the reference signal.
+The Unit Delay is used to break the algebraic loop.
 
+<img width="1089" height="417" alt="Step 7" src="https://github.com/user-attachments/assets/982296db-e8d2-4e6e-9efb-1f199b62a1a8" />
 
+STEP 8:
+In the Constant block, the Constant value parameter is set to 5.
+ 
+In the Discrete PID Controller, the Controller parameter is set to PI and the Sample time parameter to 0.1. In the Controller parameters section, these parameters are changed as:
+Proportional (P) 15
+Integral (I) 10
 
-
-
-
-
+<img width="1454" height="590" alt="Step 8" src="https://github.com/user-attachments/assets/13ec1271-3e84-467f-be16-7c3b782fab95" />
 
 
 
