@@ -21,4 +21,13 @@ The DC motor is coupled to the valve handle through a set of gears that supply t
 <img width="870" height="207" alt="Block Diagram" src="https://github.com/user-attachments/assets/2b7a345b-2029-46b2-8b75-fc1e3691df65" />
 
 ## Methodology
+For this project, the input voltage controls the torque output of a DC motor. As the objective is to use the plant model in a feedback loop, it is necessary to change the voltage using an external signal. The Controlled Voltage Source block (Electrical > Electrical Sources) uses a physical signal input to set the block's voltage.
+
+STEP 1: 
+A Controlled Voltage Source block and a PS Constant block are added to your model.
+ 
+The Constant value parameter of the PS Constant block is set to 36 V and connect the block to the Controlled Voltage Source block.
+
+<img width="696" height="621" alt="Step 1" src="https://github.com/user-attachments/assets/bbbaace1-e9d9-4f03-a6dd-97a020a46070" />
+
 
