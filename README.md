@@ -106,5 +106,7 @@ Integral (I) 10
 
 <img width="1454" height="590" alt="Step 8" src="https://github.com/user-attachments/assets/13ec1271-3e84-467f-be16-7c3b782fab95" />
 
+## CONCLUSION
+
 
 
