@@ -107,6 +107,7 @@ Integral (I) 10
 <img width="1454" height="590" alt="Step 8" src="https://github.com/user-attachments/assets/13ec1271-3e84-467f-be16-7c3b782fab95" />
 
 ## CONCLUSION
+This project demonstrates the modeling and feedback control of an electronic valve using MATLAB/Simulink and Simscape. By integrating the electrical and mechanical components of a DC motor-driven valve with a Proportional-Integral (PI) controller, the system is designed to regulate the fluid flow rate at a desired setpoint of 5 L/min. The project highlights the importance of physical system modeling and feedback control in achieving precise flow regulation, providing a foundation for practical applications in industrial automation, instrumentation, and process control.
 
 ## REFERENCE
 
